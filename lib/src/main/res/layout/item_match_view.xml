@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <ImageView
+      android:id="@+id/id_match_bg"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/shape_home_game_placeholder" />
+
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="139dp"
+      android:src="@drawable/img_matching_icon_title" />
+
+  <TextView
+      android:id="@+id/id_search"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="240dp"
+      android:text="正在搜索对手"
+      android:textColor="#66ffffff"
+      android:textSize="16sp"
+      android:visibility="gone" />
+
+  <com.magical.lib.ShaderView
+      android:id="@+id/id_shader"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+
+  <com.magical.lib.MatchCircleView
+      android:id="@+id/id_circle_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+
+  <com.magical.lib.font.FontTextView
+      android:id="@+id/id_count_time"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:textColor="#ffffff"
+      android:textSize="72sp"
+      app:font_path="font/leger-bo.ttf"
+      tools:text="1" />
+
+  <Button
+      android:id="@+id/id_cancel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom|center_horizontal"
+      android:layout_marginBottom="96dp"
+      android:background="@drawable/bt_matching_cancel_button"
+      android:text="取消"
+      android:textColor="#ccffffff"
+      android:textSize="16sp" />
+
+</FrameLayout>

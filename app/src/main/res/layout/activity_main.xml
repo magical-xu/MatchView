@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <TextView
+      android:id="@+id/id_hint"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:lineSpacingExtra="5dp"
+      android:text="@string/start_game"
+      android:textColor="#333333"
+      android:textSize="25sp"
+      android:visibility="gone" />
+
+  <com.magical.lib.MatchView
+      android:id="@+id/id_match_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="gone" />
+
+  <com.magical.lib.MatchSuccessView
+      android:id="@+id/id_match_success_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="gone" />
+</FrameLayout>

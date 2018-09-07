@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="FontTextView">
+    <attr format="string|reference" name="font_path" />
+  </declare-styleable>
+</resources>

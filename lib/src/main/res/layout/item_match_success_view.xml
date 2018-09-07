@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <ImageView
+      android:id="@+id/id_blue_side"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:scaleType="fitXY"
+      android:src="@drawable/img_match_blue_bg"/>
+
+  <ImageView
+      android:id="@+id/id_blue_shadow"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="right"
+      android:layout_marginTop="21dp"
+      android:src="@drawable/bg_matching_blus_side_shadow1"/>
+
+  <ImageView
+      android:id="@+id/id_left_person"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:src="@drawable/img_matching_girl_left1"/>
+
+  <ImageView
+      android:id="@+id/id_red_side"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom"
+      android:scaleType="fitXY"
+      android:src="@drawable/img_match_red_bg"/>
+
+  <ImageView
+      android:id="@+id/id_red_shadow"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="left|bottom"
+      android:layout_marginBottom="21dp"
+      android:src="@drawable/bg_matching_red_side_shadow1"/>
+
+  <ImageView
+      android:id="@+id/id_vs_bg"
+      android:layout_width="match_parent"
+      android:layout_height="103dp"
+      android:layout_gravity="center"
+      android:src="@drawable/img_matching_vs_separate_whole1"/>
+
+  <ImageView
+      android:id="@+id/id_vs_icon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:src="@drawable/img_matching_vs"/>
+
+  <ImageView
+      android:id="@+id/id_right_person"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="bottom|right"
+      android:layout_marginBottom="-160dp"
+      android:src="@drawable/img_matching_boy_right1"/>
+
+  <LinearLayout
+      android:id="@+id/id_blue_card"
+      android:layout_width="110dp"
+      android:layout_height="130dp"
+      android:layout_gravity="right"
+      android:layout_marginRight="38dp"
+      android:layout_marginTop="89dp"
+      android:background="@drawable/shape_match_avatar_bg"
+      android:gravity="center_horizontal"
+      android:orientation="vertical">
+
+    <com.magical.lib.widget.HeadImageView
+        android:id="@+id/id_blue_avatar"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/circle_shadow"/>
+
+    <TextView
+        android:id="@+id/id_blue_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColor="#FF333333"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="大宝SoD蜜蜜米"/>
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/id_red_card"
+      android:layout_width="110dp"
+      android:layout_height="130dp"
+      android:layout_gravity="left|bottom"
+      android:layout_marginBottom="89dp"
+      android:layout_marginLeft="38dp"
+      android:background="@drawable/shape_match_avatar_bg"
+      android:gravity="center_horizontal"
+      android:orientation="vertical">
+
+    <com.magical.lib.widget.HeadImageView
+        android:id="@+id/id_red_avatar"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/circle_shadow"
+        tools:background="#f00"/>
+
+    <TextView
+        android:id="@+id/id_red_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColor="#FF333333"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="哈哈哈哈哈哈哈哈"/>
+  </LinearLayout>
+
+  <com.magical.lib.font.FontTextView
+      android:id="@+id/id_coin_total"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:maxLines="1"
+      android:textColor="#FFFFB520"
+      android:textSize="32sp"
+      app:font_path="font/leger-bo.ttf"/>
+
+  <com.airbnb.lottie.LottieAnimationView
+      android:id="@+id/id_lottie_view_blue"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"/>
+
+  <com.airbnb.lottie.LottieAnimationView
+      android:id="@+id/id_lottie_view_red"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginTop="20dp"/>
+
+  <com.magical.lib.MatchLoadingView
+      android:id="@+id/id_loading_view"
+      android:layout_width="match_parent"
+      android:layout_height="1.5dp"
+      android:layout_gravity="bottom"
+      android:visibility="invisible"/>
+</FrameLayout>
